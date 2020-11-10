@@ -1,0 +1,55 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+.out
+build
+debug
+obj
+
+# debug
+/.tmp
+
+# misc
+.vs
+.DS_Store
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.vs/slnx.sqlite
+/.vs/ECPOnboarding-ui/v16/.suo
+/.vs/slnx.sqlite-journal
+/.vs/VSWorkspaceState.json
+/.vs/ECPOnboarding-ui
+src/AllAboutVision.Web/aws-logger-errors.txt
+.vscode/launch.json
+.vscode/tasks.json
+src/AllAboutVision.Web/bin/
+src/AllAboutVision.Domain/bin/
+src/AllAboutVision.Infrastructure/bin/
+src/AllAboutVision.Web/wwwroot/css/site.css
+src/AllAboutVision.Web/wwwroot/css/site.css.map
+src/AllAboutVision.Web/wwwroot/css/site.min.css
+src/AllAboutVision.Web/wwwroot/js/site.js
+src/AllAboutVision.Web/wwwroot/js/site.js.map
+src/AllAboutVision.Web/wwwroot/js/site.min.js
+src/CacheManagerLambda/bin/
+src/AllAboutVisionCacheManager/bin/
+src/AllAboutVisionCacheReset/bin/
+src/AllAboutVision.Infrastructure.IntegrationTests/bin/
+src/AllAboutVision.Web.UnitTests/bin/
+*.user
