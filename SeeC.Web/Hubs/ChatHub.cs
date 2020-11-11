@@ -13,7 +13,7 @@ namespace SeeC.Web.Hubs
         public async Task JoinRoom(string roomName)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId, roomName);
-            await Clients.Group(roomName).SendAsync(Context.User.Identity.Name + " joined.");
+            await Clients.Group(roomName).SendAsync("another user joined.");
         }
 
         public Task LeaveRoom(string roomName)

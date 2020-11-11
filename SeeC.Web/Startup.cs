@@ -41,7 +41,11 @@ namespace SeeC.Web
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
 
             app.UseRouting();
 
