@@ -1,0 +1,10 @@
+[
+  {
+    "relation": [ "delegate_permission/common.handle_all_urls" ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ph.esspi.c2see",
+      "sha256_cert_fingerprints": [ "98:70:7B:81:7F:B9:C1:F3:F1:F8:0F:DE:F3:41:9E:D0:B7:22:C6:F6:FA:C2:68:02:C9:D7:4B:26:5B:89:46:F5" ]
+    }
+  }
+]

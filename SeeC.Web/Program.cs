@@ -19,15 +19,9 @@ namespace SeeC.Web
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-
-                    webBuilder.UseKestrel(
-                        options =>
-                        {
-                            options.Listen(IPAddress.Any, 80);
-                        });
                     webBuilder.UseStartup<Startup>();
                 });
     }
